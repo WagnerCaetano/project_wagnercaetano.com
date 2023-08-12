@@ -1,0 +1,7 @@
+.custom-background {
+  background-image: radial-gradient(circle at top, #283857 0%, #0e1727 100%);
+}
+
+.hero-background {
+  background-image: radial-gradient(rgba(56,117,252,0.45) 0%, transparent 60%);
+}
