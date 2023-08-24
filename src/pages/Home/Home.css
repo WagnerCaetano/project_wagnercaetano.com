@@ -1,7 +1,14 @@
+@import './../../styles/blobs.css';
+
 .custom-background {
-  background-image: radial-gradient(circle at top, #283857 0%, #0e1727 100%);
+  background: linear-gradient(to bottom, #283857 0%, #0e1727 90%);
 }
 
 .hero-background {
-  background-image: radial-gradient(rgba(56,117,252,0.45) 0%, transparent 60%);
+  background-image: radial-gradient(rgba(56,117,252,0.65) 0%, transparent 50%);
 }
+
+.card-background {
+  background-image: linear-gradient(135deg, #283857 0%, #1B2840 100%);
+}
+

@@ -14,11 +14,8 @@ function Nav() {
         <a href="" className="text-text hover:text-primary transition-all duration-300">
           About
         </a>
-        <a
-          href=""
-          className="border-primary text-primary border-2 p-2 rounded hover:bg-secondary transition-all duration-300"
-        >
-          Create your website here
+        <a href="" className="border-primary text-primary border-2 p-2 rounded hover:bg- transition-all duration-300">
+          Get in contact
         </a>
       </div>
     </nav>
