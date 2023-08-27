@@ -19,10 +19,69 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full max-w-7xl px-8 gap-4">
-        <h1 className="text-3xl font-bold text-text">Projetos</h1>
-        <div className="w-3/4 card-background bg-opacity-50 rounded-lg h-[420px] p-8">
-          <h2 className="text-xl font-bold text-text">Projeto 1</h2>
+      <div className="flex flex-col w-full max-w-7xl p-8 gap-8">
+        <div className="card-background shadow-2xl rounded-lg p-4 flex flex-row items-center gap-4 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
+            <p className="text-right">
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+
+            <p className="text-right">
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+          </div>
+          <div className="w-1/2 flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-text">Projeto 1</h2>
+            <img src="https://picsum.photos/600/400" alt="" className="rounded-lg mt-4" />
+          </div>
+          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
+            <p>
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+            <p>
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+          </div>
+        </div>
+
+        <div className="card-background shadow-2xl rounded-lg p-4 flex flex-row items-center gap-4 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
+            <p className="text-right">
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+
+            <p className="text-right">
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+          </div>
+          <div className="w-1/2 flex flex-col items-center">
+            <h2 className="text-2xl font-bold text-text">Projeto 1</h2>
+            <img src="https://picsum.photos/600/400" alt="" className="rounded-lg mt-4" />
+          </div>
+          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
+            <p>
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+            <p>
+              <b>Idea</b>
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+            </p>
+          </div>
         </div>
       </div>
 
