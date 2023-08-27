@@ -1,7 +1,43 @@
+import { useEffect } from "react";
 import Nav from "../../components/Nav/Nav";
 import "./Home.css";
 
 function Home() {
+  useEffect(() => {
+    const chatnow_cta_button = document.querySelector(".chatnow_cta_button");
+    const chatnow_cta_message = document.querySelector(".chatnow_cta_message");
+
+    chatnow_cta_button.addEventListener("mouseover", () => {
+      chatnow_cta_message.classList.remove("hidden");
+    });
+
+    chatnow_cta_button.addEventListener("mouseout", () => {
+      chatnow_cta_message.classList.add("hidden");
+    });
+
+    const chatnow_images_button = document.querySelector(".chatnow_images_button");
+    const chatnow_images_message = document.querySelector(".chatnow_images_message");
+
+    chatnow_images_button.addEventListener("mouseover", () => {
+      chatnow_images_message.classList.remove("hidden");
+    });
+
+    chatnow_images_button.addEventListener("mouseout", () => {
+      chatnow_images_message.classList.add("hidden");
+    });
+
+    const chatnow_navbar_button = document.querySelector(".chatnow_navbar_button");
+    const chatnow_navbar_message = document.querySelector(".chatnow_navbar_message");
+
+    chatnow_navbar_button.addEventListener("mouseover", () => {
+      chatnow_navbar_message.classList.remove("hidden");
+    });
+
+    chatnow_navbar_button.addEventListener("mouseout", () => {
+      chatnow_navbar_message.classList.add("hidden");
+    });
+  }, []);
+
   return (
     <div className="flex flex-col h-screen w-scren items-center">
       <div className="custom-background w-full flex flex-col items-center">
@@ -19,69 +55,38 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full max-w-7xl p-8 gap-8">
-        <div className="card-background shadow-2xl rounded-lg p-4 flex flex-row items-center gap-4 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
-          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
-            <p className="text-right">
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+      <div className="flex flex-col w-full max-w-7xl p-8 gap-24">
+        <div className="card-background rounded-lg p-4 flex flex-col items-center gap-4 hover:shadow-[0_0px_50px_rgba(8,_112,_184,_0.7)] transition-all duration-300">
+          <h2 className="text-4xl font-bold text-text">Project 1</h2>
+          <img src="/assets/chatnow.png" alt="" className="rounded-lg mt-4" />
+          <div className="absolute flex flex-col lg:top-[95em] lg:left-[29em] w-48 h-38">
+            <span className="chatnow_cta_button w-6 h-6 bg-[rgba(255,_255,_255,_0.7)] rounded-full cursor-pointer border-primary border-2 z-10" />
+            <span className="relative -top-6 w-6 h-6 bg-[rgba(255,_255,_255,_0.7)] rounded-full border-primary border-2 animate-ping" />
+            <p className="chatnow_cta_message hidden w-48 bg-secondary bg-opacity-25 rounded p-2 -mt-4 border-darkPrimary border-2 border-opacity-25 text-darkPrimary font-semibold transition-all">
+              Customizable CTA buttons optimized for your business
             </p>
+          </div>
 
-            <p className="text-right">
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+          <div className="absolute flex flex-col lg:top-[165%] lg:left-[60%] w-48 h-38">
+            <span className="chatnow_images_button w-6 h-6 bg-[rgba(255,_255,_255,_0.7)] rounded-full cursor-pointer border-primary border-2 z-10" />
+            <span className="relative -top-6 w-6 h-6 bg-[rgba(255,_255,_255,_0.7)] rounded-full border-primary border-2 animate-ping" />
+            <p className="chatnow_images_message hidden w-48 bg-secondary bg-opacity-25 rounded p-2 -mt-4 border-darkPrimary border-2 border-opacity-25 text-darkPrimary font-semibold transition-all">
+              Interactive images that will make your website stand out
             </p>
           </div>
-          <div className="w-1/2 flex flex-col items-center">
-            <h2 className="text-2xl font-bold text-text">Projeto 1</h2>
-            <img src="https://picsum.photos/600/400" alt="" className="rounded-lg mt-4" />
-          </div>
-          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
-            <p>
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
-            </p>
-            <p>
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
+
+          <div className="absolute flex flex-col lg:top-[121%] lg:left-[54%] w-48 h-38">
+            <span className="chatnow_navbar_button w-6 h-6 bg-[rgba(255,_255,_255,_0.7)] rounded-full cursor-pointer border-primary border-2 z-10" />
+            <span className="relative -top-6 w-6 h-6 bg-[rgba(255,_255,_255,_0.7)] rounded-full border-primary border-2 animate-ping" />
+            <p className="chatnow_navbar_message hidden w-48 bg-secondary bg-opacity-25 rounded p-2 -mt-4 border-darkPrimary border-2 border-opacity-25 text-darkPrimary font-semibold transition-all">
+              Multi-page websites with a navbar that will make your website look professional
             </p>
           </div>
         </div>
 
-        <div className="card-background shadow-2xl rounded-lg p-4 flex flex-row items-center gap-4 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
-          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
-            <p className="text-right">
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
-            </p>
-
-            <p className="text-right">
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
-            </p>
-          </div>
-          <div className="w-1/2 flex flex-col items-center">
-            <h2 className="text-2xl font-bold text-text">Projeto 1</h2>
-            <img src="https://picsum.photos/600/400" alt="" className="rounded-lg mt-4" />
-          </div>
-          <div className="w-1/4 flex flex-col justify-between h-full py-12 text-text">
-            <p>
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
-            </p>
-            <p>
-              <b>Idea</b>
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quisquam
-            </p>
-          </div>
+        <div className="card-background rounded-lg p-4 flex flex-col items-center gap-4 hover:shadow-[0_0px_50px_rgba(8,_112,_184,_0.7)] transition-all duration-300">
+          <h2 className="text-4xl font-bold text-text">Project 2</h2>
+          <img src="/assets/chatnow.png" alt="" className="rounded-lg mt-4" />
         </div>
       </div>
 
